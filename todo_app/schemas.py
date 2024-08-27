@@ -2,7 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel, validator
 from enum import Enum
-from  fastapi import HTTPException
+from fastapi import HTTPException
 
 
 class StatusTodo(str, Enum):
@@ -34,8 +34,6 @@ class TodoUpdate(BaseModel):
                 }
             )
         return value
-
-
 
 
 class TodoInDBBase(TodoBase):
